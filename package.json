@@ -7,11 +7,12 @@
     "ios": "react-native run-ios",
     "lint": "eslint .",
     "start": "react-native start",
-    "test": "jest"
+    "test": "jest",
+    "dev": "concurrently \"npm run start\" \"npm run android\""
   },
   "dependencies": {
     "react": "19.0.0",
-    "react-native": "0.79.2"
+    "react-native": "^0.79.2"
   },
   "devDependencies": {
     "@babel/core": "^7.25.2",
@@ -27,6 +28,7 @@
     "@types/jest": "^29.5.13",
     "@types/react": "^19.0.0",
     "@types/react-test-renderer": "^19.0.0",
+    "concurrently": "^9.1.2",
     "eslint": "^8.19.0",
     "jest": "^29.6.3",
     "prettier": "2.8.8",
